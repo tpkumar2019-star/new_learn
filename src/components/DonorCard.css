@@ -1,0 +1,75 @@
+.donor-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  height: 100%;
+}
+
+.donor-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.donor-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.donor-name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.donor-location {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.donor-card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.blood-group-badge {
+  background-color: rgba(229, 62, 62, 0.1);
+  color: var(--primary-color);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.availability-badge {
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.availability-badge.available {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.availability-badge.unavailable {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+.donor-card-footer {
+  margin-top: auto;
+}
