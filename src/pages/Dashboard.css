@@ -1,0 +1,154 @@
+.dashboard-page {
+  padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.stats-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.stat-card .stat-number {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.stat-card .stat-number.text-danger {
+  color: var(--primary-color);
+}
+
+.stat-card .stat-number.text-success {
+  color: #38a169;
+}
+
+.stat-card .stat-label {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.requests-section {
+  background-color: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.mr-sm {
+  margin-right: var(--spacing-sm);
+}
+
+.controls-group {
+  display: flex;
+  align-items: center;
+}
+
+.inline-select {
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px 12px;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.request-row {
+  padding: var(--spacing-md) var(--spacing-lg);
+  box-shadow: none;
+  border: 1px solid #e2e8f0;
+}
+
+.patient-name {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.request-details {
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blood-badge {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.request-meta {
+  gap: var(--spacing-md);
+}
+
+.status-badge, .urgency-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background-color: #feebc8;
+  color: #c05621;
+}
+
+.status-badge.fulfilled {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.urgency-badge.critical {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+
+.urgency-badge.high {
+  background-color: #feebc8;
+  color: #dd6b20;
+}
+
+.urgency-badge.medium, .urgency-badge.normal {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-actions {
+    flex-direction: column;
+  }
+  
+  .controls-group {
+    margin-top: var(--spacing-md);
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: stretch;
+  }
+  
+  .inline-select {
+    width: 100%;
+  }
+
+  .request-meta {
+    margin-top: var(--spacing-md);
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,51 @@
+.matching-donors-page {
+  padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
+}
+
+.filter-section {
+  background-color: var(--white);
+  margin-bottom: var(--spacing-xl);
+}
+
+.filter-group {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.filter-field {
+  flex: 1;
+}
+
+.filter-field label {
+  font-weight: 600;
+  display: block;
+}
+
+.checkbox-field label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.donors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.empty-state {
+  padding: calc(var(--spacing-xl) * 2);
+  background-color: #f7fafc;
+  border: 1px dashed #cbd5e0;
+}
+
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .filter-group {
+    flex-direction: column;
+    gap: 0;
+  }
+}

@@ -1,0 +1,60 @@
+.blood-request-page {
+  padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-group {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-dark);
+}
+
+.textarea-field {
+  resize: vertical;
+}
+
+.status-message {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  font-weight: 600;
+}
+
+.status-message.error {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+.status-message.success {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    gap: 0;
+  }
+}
